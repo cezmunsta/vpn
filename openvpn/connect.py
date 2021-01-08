@@ -62,7 +62,7 @@ class OpenVPN:
 
         self._storage['credentials'] = {
             'marker': options['CREDENTIALS'],
-            'use_lastpass': (options['lastpass'], options['username'])
+            'use_lastpass': (options.get('lastpass'), options.get('username'))
         }
 
     @staticmethod
